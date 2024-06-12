@@ -1,3 +1,12 @@
+/* Ensure html and body elements are set to 100% */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -11,13 +20,15 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #4756df;
-    --secondary-color: #ff7235;
+    --bg-color: #000000;
+    --primary-color: #ffffff;
+    --secondary-color: #fac400;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
+    --top_margin: 0.5rem;
+    --top-margin-2: 1rem;
     --line-height: 1.7rem;
     --transition: 0.3s;
 }
@@ -27,7 +38,7 @@ body {
     font-family: var(--font-family);
     line-height: var(--line-height);
     background-color: var(--bg-color);
-    color: #333;
+    color: #fdfdfd;
 }
 
 /* Style the header */
@@ -38,18 +49,19 @@ header {
     text-align: center;
 }
 
+/* Style the Nav bar */
 nav {
     position: sticky;
     position: sticky;
     top: auto;
     left: auto;
-    z-index: auto;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px #fac400;
     }
 
     nav h1 {
@@ -75,3 +87,59 @@ nav {
         font-weight: var(--bold-font);
       }
       
+      .burger-menu {
+        color: var(--primary-color);
+        font-size: 2rem;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        display: none;
+      }
+
+/* Style the about me section */
+.about_me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 100.75rem;
+  margin: auto;
+  width: 100%;
+}
+
+.about_me img {
+  display: block; /* Prevent the image from flashing across the entire page when loading */
+  width: 350px; 
+  height: 350px; 
+  border-radius: 90%; 
+  object-fit: cover;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px; 
+  color: #fff; 
+}
+
+.bio-title {
+  font-size: 2rem; 
+  margin-top: var(--top-margin-2); 
+  text-align: center; 
+}
+
+.bio-text {
+  display: block;
+  margin-top: var(--top-margin-2);
+  margin-bottom: var(--bottom-margin);
+  line-height: 1.6; 
+  
+}

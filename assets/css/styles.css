@@ -27,6 +27,7 @@ html, body {
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
+    --page-padding: 2rem;
     --top_margin: 0.5rem;
     --top-margin-2: 1rem;
     --line-height: 1.7rem;
@@ -40,6 +41,8 @@ body {
     background-color: var(--bg-color);
     color: #fdfdfd;
 }
+
+/* Set a basic format for p tags */
 
 /* Style the header */
 header {
@@ -60,6 +63,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
+    margin: calc(-1 * var(--page-padding));
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px #fac400;
     }
@@ -97,7 +101,7 @@ nav {
       }
 
 /* Style the about me section */
-.about_me {
+.about-me-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,14 +109,16 @@ nav {
   max-width: 100.75rem;
   margin: auto;
   width: 100%;
+  margin-top: var(--top-margin-2);
 }
 
-.about_me img {
+.about-me-container img {
   display: block; /* Prevent the image from flashing across the entire page when loading */
   width: 350px; 
   height: 350px; 
   border-radius: 90%; 
   object-fit: cover;
+  margin-top: 2rem;
 }
 
 .bio-container {
@@ -132,7 +138,7 @@ nav {
 
 .bio-title {
   font-size: 2rem; 
-  margin-top: var(--top-margin-2); 
+  margin-bottom: var(--bottom-margin-2); 
   text-align: center; 
 }
 
@@ -142,4 +148,26 @@ nav {
   margin-bottom: var(--bottom-margin);
   line-height: 1.6; 
   
+}
+/* Style the more about me section */
+.more-about-me-container {
+  max-width: var(--max-width);
+  margin: 0 auto; /* Centers the container */
+  padding: var(--container-padding); /* Adds padding inside the container */
+}
+
+/* Style the more about me section */
+.more-about-me {
+  padding: 2rem 2rem; /* Adds padding to the top and bottom */
+  
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Style the paragraphs */
+.bio-text {
+  margin-top: var(--top-margin-2);
+  margin-bottom: var(--bottom-margin);
+  line-height: 1.6; 
+  text-align: justify; /* Optional: Justify text for better readability */
 }

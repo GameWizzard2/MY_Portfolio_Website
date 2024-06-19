@@ -6,168 +6,150 @@ html, body {
   padding: 0;
 }
 
-
 /* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Variables */
 :root {
-    --font-family: "Roboto", sans-serif;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color: #000000;
-    --primary-color: #ffffff;
-    --secondary-color: #fac400;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --page-padding: 2rem;
-    --top_margin: 0.5rem;
-    --top-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
+  --font-family: "Roboto", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #000000;
+  --primary-color: #ffffff;
+  --secondary-color: #fac400;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --page-padding: 2rem;
+  --top-margin: 0.5rem;
+  --top-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
 }
 
 /* Set a basic font and background color for the body */
 body {
-    font-family: var(--font-family);
-    line-height: var(--line-height);
-    background-color: var(--bg-color);
-    color: #fdfdfd;
-}
-
-/* Set a basic format for p tags */
-
-/* Style the header */
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: var(--bottom-margin-2) 0;
-    text-align: center;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  background-color: var(--bg-color);
+  color: #fdfdfd;
 }
 
 /* Style the Nav bar */
 nav {
-    position: sticky;
-    position: sticky;
-    top: auto;
-    left: auto;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    margin: calc(-1 * var(--page-padding));
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px #fac400;
-    }
+  position: sticky;
+  top: auto;
+  left: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  margin: calc(-1 * var(--page-padding));
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px #fac400;
+}
 
-    nav h1 {
-        color: var(--primary-color);
-      }
-      
-      nav a {
-        color: var(--primary-color);
-        transition: var(--transition);
-      }
-      
-      nav a:hover {
-        color: var(--secondary-color);
-        border-bottom: 2px solid var(--secondary-color);
-      }
-      
-      nav ul {
-        display: flex;
-        gap: 1.9rem;
-      }
-      
-      nav ul li {
-        font-weight: var(--bold-font);
-      }
-      
-      .burger-menu {
-        color: var(--primary-color);
-        font-size: 2rem;
-        border: 0;
-        background-color: transparent;
-        cursor: pointer;
-        display: none;
-      }
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
 
 /* Style the about me section */
 .about-me-container {
+  background-image: url('../images/bio_background.webp');
+  background-repeat: initial;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  max-width: 100.75rem;
+  max-width: 200rem;
   margin: auto;
   width: 100%;
   margin-top: var(--top-margin-2);
 }
 
-.about-me-container img {
-  display: block; /* Prevent the image from flashing across the entire page when loading */
-  width: 350px; 
-  height: 350px; 
-  border-radius: 90%; 
+.image-of-me img {
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: 90%;
   object-fit: cover;
   margin-top: 2rem;
 }
 
 .bio-container {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  
-}
-
-.bio {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px; 
-  color: #fff; 
+  max-width: 600px;
 }
 
 .bio-title {
-  font-size: 2rem; 
-  margin-bottom: var(--bottom-margin-2); 
-  text-align: center; 
+  font-size: 2rem;
+  margin-bottom: var(--bottom-margin-2);
+  text-align: center;
+}
+
+/* Style the more about me section */
+.more-about-me-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: var(--container-padding);
+  text-align: justify;
 }
 
 .bio-text {
   display: block;
   margin-top: var(--top-margin-2);
   margin-bottom: var(--bottom-margin);
-  line-height: 1.6; 
-  
-}
-/* Style the more about me section */
-.more-about-me-container {
-  max-width: var(--max-width);
-  margin: 0 auto; /* Centers the container */
-  padding: var(--container-padding); /* Adds padding inside the container */
+  text-align: center;
+  line-height: 1.6;
 }
 
-/* Style the more about me section */
 .more-about-me {
-  padding: 2rem 2rem; /* Adds padding to the top and bottom */
-  
-  border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Style the paragraphs */
 .bio-text {
   margin-top: var(--top-margin-2);
   margin-bottom: var(--bottom-margin);
-  line-height: 1.6; 
-  text-align: justify; /* Optional: Justify text for better readability */
+  line-height: 1.6;
+  text-align: justify;
 }

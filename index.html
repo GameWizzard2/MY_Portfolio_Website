@@ -1,100 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA_Compitable" content="IE=edge">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0"
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Portfolio Website">
+  <meta name="author" content="Christopher Barfield">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Christopher Barfield | Software Developer</title>
+</head>
 
-    <title>Christopher Barfield | Software Developer</title>
-  </head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Christopher Barfield</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>Christopher Barfield</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-    </nav>
+  <!-- About Me Section -->
+  <section class="about-me-container" id="about">
+    <div class="image-of-me">
+      <img 
+        src="assets/images/me.jpg"
+        alt="Christopher Barfield"
+        loading="lazy"
+        class="my_image"
+      >
+    </div>
 
-    <!-- About Me Section -->
-    <section class="about-me-container" id="about">
-      <div class="bio-container">
-        <img 
-          src="assets/images/me.jpg"
-          alt="Christopher Barfield"
-          loading="lazy"
-          class="my_image"
-        />
-      </div>
+    <div class="bio-container">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text-container">
+        I am an enthusiastic and dedicated software developer passionate about automating 
+        and simplifying complex processes through integrated software solutions. I'm pursuing 
+        a Bachelor of Science in Software Development with a concentration in Software Design 
+        & Programming from DeVry University. Having already obtained my Associate of Applied 
+        Science in Information Technology & Networking and keeping my GPA at a perfect 4.00, 
+        I am committed to both academic achievement and professional growth.
+      </p>
+    </div>
+  </section>
+   
+  <!-- More About Me -->
+  <section class="more-about-me-container">
+    <div class="more-about-me">
+      <p class="bio-text">
+          With hands-on experience in various programming languages, including HTML, CSS, Java, 
+          JavaScript, and MySQL, as well as a solid foundation in Python, I excel at developing 
+          robust software solutions. My proficiency extends to working with big data tools and frameworks.
+      </p>
+      <p class="bio-text">
+          In my professional journey, I have held pivotal roles such as a Foreman at Ironhorse 
+          Logistics Group Inc., where I coordinated teams, maintained company equipment, and 
+          performed crucial IT tasks. My role required strong problem-solving skills and the 
+          ability to communicate effectively with both team members and clients to achieve project goals.
+      </p>
+      <p class="bio-text">
+          My core competencies include leadership, debugging, troubleshooting, attention to 
+          detail, backend development, and database management. I am adept at multitasking and 
+          have a proven track record of maintaining excellent customer relations and providing technical support.
+      </p>
+      <p class="bio-text">
+          I am always eager to connect with like-minded professionals and explore new opportunities 
+          where I can contribute my skills and expertise. If you are looking for a dedicated software 
+          developer with a strong technical background and a passion for innovation, let's connect!
+      </p>
+      <p class="bio-text">
+          Specialties: Software Development, Problem-Solving, Team Leadership, Backend Development, 
+          Database Management, Technical Support.
+      </p>
+    </div>
+  </section>
 
-      <div class="bio">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text-container">
-          I am an enthusiastic and dedicated software developer passionate about automating 
-          and simplifying complex processes through integrated software solutions. I'm pursuing 
-          a Bachelor of Science in Software Development with a concentration in Software Design 
-          & Programming from DeVry University. Having already obtained my Associate of Applied 
-          Science in Information Technology & Networking and keeping my GPA at a perfect 4.00, 
-          I am committed to both academic achievement and professional growth.
-        </p>
-      </div>
-      
-    </section>
-     
-    <!-- More About Me -->
-    <section class="more-about-me">
-      <div class="more-about-me-container">
-        <p class="bio-text">
-            With hands-on experience in various programming languages, including HTML, CSS, Java, 
-            JavaScript, and MySQL, as well as a solid foundation in Python, I excel at developing 
-            robust software solutions. My proficiency extends to working with big data tools and frameworks.
-        </p>
-        <p class="bio-text">
-            In my professional journey, I have held pivotal roles such as a Foreman at Ironhorse 
-            Logistics Group Inc., where I coordinated teams, maintained company equipment, and 
-            performed crucial IT tasks. My role required strong problem-solving skills and the 
-            ability to communicate effectively with both team members and clients to achieve project goals.
-        </p>
-        <p class="bio-text">
-            My core competencies include leadership, debugging, troubleshooting, attention to 
-            detail, backend development, and database management. I am adept at multitasking and 
-            have a proven track record of maintaining excellent customer relations and providing technical support.
-        </p>
-        <p class="bio-text">
-            I am always eager to connect with like-minded professionals and explore new opportunities 
-            where I can contribute my skills and expertise. If you are looking for a dedicated software 
-            developer with a strong technical background and a passion for innovation, let's connect!
-        </p>
-        <p class="bio-text">
-            Specialties: Software Development, Problem-Solving, Team Leadership, Backend Development, 
-            Database Management, Technical Support.
-        </p>
-      </div>
-    </section>
+  <!-- Skills section -->
+  <!-- Projects section -->
+  <!-- Contact section -->
+  <!-- Social accounts - Fixed to the right -->
+  <!-- Scroll to top -->
+  <!-- Footer section -->
+  <!-- Website scripts -->
 
-    <!-- Skills section -->
-
-    <!-- Projects section -->
-
-    <!-- Contact section -->
-
-    <!-- Social accounts - Fixed to the right -->
-
-    <!-- Scroll to top -->
-
-    <!-- Footer section -->
-
-    <!-- Website scripts -->
-
-  </body>
+</body>
 </html>

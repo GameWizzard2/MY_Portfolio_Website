@@ -125,31 +125,67 @@ nav ul li {
 /* Style the more about me section */
 .more-about-me-container {
   max-width: 1600px;
-  margin: 0 auto;
-  padding: var(--container-padding);
-  text-align: justify;
-}
-
-.bio-text {
-  display: block;
-  margin-top: var(--top-margin-2);
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-  line-height: 1.6;
-}
-
-.more-about-me {
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-
-
-/* Style the paragraphs */
-.bio-text {
+.more-about-me-container p {
   margin-top: var(--top-margin-2);
   margin-bottom: var(--bottom-margin);
-  line-height: 1.6;
   text-align: justify;
+}
+
+/* Style the skills section */
+ /* Style the skills section */
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+/* Icons must be 96 x 96 to be uniform */
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Style the contact box*/
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
 }

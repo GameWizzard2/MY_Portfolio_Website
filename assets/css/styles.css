@@ -26,6 +26,7 @@ html, body {
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
+  --max-width: 1600px
   --page-padding: 2rem;
   --top-margin: 0.5rem;
   --top-margin-2: 1rem;
@@ -39,6 +40,10 @@ body {
   line-height: var(--line-height);
   background-color: var(--bg-color);
   color: #fdfdfd;
+}
+
+h2 {
+  text-align: center;
 }
 
 /* Style the Nav bar */
@@ -55,6 +60,7 @@ nav {
   margin: calc(-1 * var(--page-padding));
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px #fac400;
+  margin-top: auto;
 }
 
 nav a {
@@ -100,13 +106,31 @@ nav ul li {
   margin-top: var(--top-margin-2);
 }
 
+.about-me-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is behind the content */
+}
+
+.about-me-container > * {
+  position: relative; /* Ensure the content is above the overlay */
+  z-index: 2;
+}
+
+
 .image-of-me img {
   display: block;
   width: 350px;
   height: 350px;
   border-radius: 90%;
   object-fit: cover;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .bio-container {
@@ -124,15 +148,24 @@ nav ul li {
 
 /* Style the more about me section */
 .more-about-me-container {
-  max-width: 1600px;
+  max-width: var(--max-width);
   padding: 2rem;
   text-align: left;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.more-about-me-container > * {
+  position: relative; /* Ensure the content is above the overlay */
+  z-index: 2;
 }
 
 .more-about-me-container p {
   margin-top: var(--top-margin-2);
   margin-bottom: var(--bottom-margin);
   text-align: justify;
+  align-items: center;
 }
 
 /* Style the skills section */
@@ -149,8 +182,8 @@ nav ul li {
 }
 
 .skills-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   justify-content: center;
 }
 
@@ -171,6 +204,49 @@ nav ul li {
   padding: 20px;
   margin: 10px;
 }
+
+/* Style the Detailed skills section*/
+.detailed-skills h2 {
+  background-color: var(--bg-color);
+  border: 1px solid gold;
+  margin-top: 10px;
+}
+
+.detailed-skills p {
+  text-align: center;
+}
+
+.detailed-skills ul {
+  list-style-position: inside; 
+}
+
+
+
+.listed-skills-grid {
+  margin-left: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto; 
+  grid-row: ;
+  gap: 30px; 
+  max-width: 85%;
+  
+}
+
+.listed-skill-4 {
+  grid-column: 2;
+}
+
+.listed-skills-box {
+  background-color: #000000; 
+  border: 1px solid var(--secondary-color); 
+  border-radius: 8px; 
+  padding: 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  align-items: center;
+}
+
 
 /* Style the contact box*/
 .contact {

@@ -152,7 +152,6 @@ nav ul li {
   margin-right: auto;
 }
 
-
 .more-about-me-container p {
   margin-top: var(--top-margin-2);
   margin-bottom: var(--bottom-margin);
@@ -289,6 +288,11 @@ nav ul li {
   color: #666;
 }
 
+/* Style the resume section*/
+.resume-section p{
+text-align: center;
+}
+
 /* Style the contact box*/
 .contact {
   margin-top: 2rem;
@@ -306,3 +310,54 @@ nav ul li {
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
+
+
+/*FIXME: decide how to add the social media icons*/ 
+.social-media-bubbles {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icon i {
+  font-size: 24px;
+}
+/* LinkedIn */
+.social-icon.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon.linkedin:hover {
+  transform: scale(1.1);
+}
+
+/* GitHub */
+.social-icon.github {
+  background-color: #333;
+}
+
+.social-icon.github:hover {
+  transform: scale(1.1);
+}
+
+/* Twitter */
+.social-icon.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icon.twitter:hover {
+  transform: scale(1.1);
+}
+
+/* Add more styles for other social media platforms */

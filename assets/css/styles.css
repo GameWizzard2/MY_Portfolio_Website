@@ -93,17 +93,15 @@ nav ul li {
 
 /* Style the about me section */
 .about-me-container {
-  background-image: url('../images/bio_background.webp');
-  background-repeat: initial;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  max-width: 200rem;
-  margin: auto;
-  width: 100%;
-  margin-top: var(--top-margin-2);
+  padding: 20px;
+  max-width: 100;
+  margin: 20px auto;
 }
 
 .about-me-container::before {
@@ -113,15 +111,13 @@ nav ul li {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 1; /* Ensure the overlay is behind the content */
+  background-image: url('../images/bio_background.webp');
+  background-repeat: initial;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Change this value to adjust opacity */
+  z-index: -1; /* Ensure the background is behind the content */
 }
-
-.about-me-container > * {
-  position: relative; /* Ensure the content is above the overlay */
-  z-index: 2;
-}
-
 
 .image-of-me img {
   display: block;
@@ -148,7 +144,7 @@ nav ul li {
 
 /* Style the more about me section */
 .more-about-me-container {
-  max-width: var(--max-width);
+  max-width: 80%;
   padding: 2rem;
   text-align: left;
   align-items: center;
@@ -156,10 +152,6 @@ nav ul li {
   margin-right: auto;
 }
 
-.more-about-me-container > * {
-  position: relative; /* Ensure the content is above the overlay */
-  z-index: 2;
-}
 
 .more-about-me-container p {
   margin-top: var(--top-margin-2);

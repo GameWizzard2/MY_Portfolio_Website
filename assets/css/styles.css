@@ -32,6 +32,11 @@ html, body {
   --top-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+
+  
+  /* HR stage variables */
+  --hr-color: gold;
+  --margin-top: 3rem
 }
 
 /* Set a basic font and background color for the body */
@@ -198,9 +203,7 @@ nav ul li {
 
 /* Style the Detailed skills section*/
 .detailed-skills h2 {
-  background-color: var(--bg-color);
-  border: 1px solid gold;
-  margin-top: 10px;
+  margin-top: 3rem;
 }
 
 .detailed-skills p {
@@ -220,8 +223,7 @@ nav ul li {
   grid-template-columns: auto auto auto auto; 
   grid-row: ;
   gap: 30px; 
-  max-width: 85%;
-  
+  max-width: 85%;  
 }
 
 .listed-skill-4 {
@@ -361,3 +363,13 @@ text-align: center;
 }
 
 /* Add more styles for other social media platforms */
+/*content end line*/
+.content-end-line{
+  color: var(--hr-color);
+  margin-top: var(--margin-top, 3rem);
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+} 

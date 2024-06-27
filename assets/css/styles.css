@@ -97,6 +97,23 @@ nav ul li {
   display: none;
 }
 
+.resume-button {
+  color: var(--primary-color);
+  border-radius: 50%; /* Ensures the button is fully rounded */
+  padding: 10px 10px; /* Adjust padding for better fit */
+  text-align: center;
+  line-height: 1.5; /* Adjust line-height for better vertical alignment */
+  background-color: transparent; /* Set background to transparent */
+  border: 2px solid var(--secondary-color); /* Border to match the text color */
+  text-decoration: none; /* Remove underline if it's a link */
+  font-size: 12px; /* Adjust font size if needed */
+}
+
+.resume-button:hover {
+  background-color: #0077b5; /* Add background color on hover */
+  color: var(--secondary-color); /* Change text color on hover */
+}
+
 /* Style the about me section */
 .about-me-container {
   position: relative;
